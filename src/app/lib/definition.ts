@@ -22,3 +22,10 @@ export type patnerCardProps = {
     imageUrl: string;
     className?: string; 
 };
+export type ImageProps = {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+    className?: string;
+};

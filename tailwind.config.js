@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/app/**/*.{js,ts,jsx,tsx,css}"],
   theme: {
-    extend: {      
+    extend: {       
       fontFamily: {
         poppins: ['var(--font-poppins)', 'sans-serif'],
       },
@@ -10,3 +10,4 @@ module.exports = {
   },
   plugins: [],
 }
+
