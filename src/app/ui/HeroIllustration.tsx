@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 const HeroIllustration = () => {
   return (
-    <div className='px-5 md:px-20 border-4 border-gray-300 mt-10 flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg space-y-4 md:space-y-0 md:space-x-6'>
-        <div className='w-full md:w-1/2 flex flex-col justify-center items-center  py-6 transition-all duration-300 md:space-y-10 hover:bg-white hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-110'>
-            <p className='md:text-[2.0rem]  text-[#13672B] mb-4'>
+    <div className=' max-w-[90%] mx-auto px-5 md:px-20 border-4 border-gray-300 mt-5 flex flex-col md:flex-row items-center  p-6 bg-white shadow-lg rounded-lg space-y-4 md:space-y-0 md:space-x-9 md:min-h-[400px]'>
+        <div className='min-h-fit w-full md:px-10 md:max-h-[70%] md:h-full md:w-1/2 flex flex-col items-center justify-center py-6 transition-all duration-300 md:gap-10 hover:bg-white hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-110'>
+            <p className=' text-center font-[montaga] md:text-[2.0rem]  text-[#13672B] mb-4'>
                 Register now for our upcoming training session to unlock new career opportunities, enhance your skills, connect with top employers, and gain industry insights.
             </p>
             <Button 
@@ -18,13 +18,24 @@ const HeroIllustration = () => {
         </Button>
 
         </div>
-        <div>
-            <Image src="/illustration.webp"
+        {/* <div className='h-full'>
+            <Image src="/pana.svg"
                 alt="Hero Illustration"
                 width={500}
                 height={300}
+                className=' min-w-[100%] min-h-[100%] w-full h-[500px] object-cover'
                 />
-        </div>
+        </div> */}
+        <div className="w-full md:w-[48%] h-[500px] flex items-center justify-center overflow-hidden">
+      <Image 
+        src="/illustration.webp"
+        alt="Hero Illustration"
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="w-full h-full object-contain"
+      />
+    </div>
       
     </div>
   )
