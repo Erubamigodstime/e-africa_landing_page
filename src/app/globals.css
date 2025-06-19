@@ -86,3 +86,45 @@ body {
   
 
 }
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 5s linear infinite;
+}
+
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 5s linear infinite;
+}
+
+
+
+@layer components {
+  .card-v-top {
+    clip-path: polygon(
+          0 0,
+        50% 40%,
+        100% 0,
+        100% 100%,
+        0 100%);
+  }
+}
