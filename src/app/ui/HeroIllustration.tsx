@@ -18,14 +18,8 @@ const HeroIllustration = () => {
         </Button>
 
         </div>
-        {/* <div className='h-full'>
-            <Image src="/pana.svg"
-                alt="Hero Illustration"
-                width={500}
-                height={300}
-                className=' min-w-[100%] min-h-[100%] w-full h-[500px] object-cover'
-                />
-        </div> */}
+       
+      
         <div className="w-full md:w-[48%] h-[500px] flex items-center justify-center overflow-hidden">
       <Image 
         src="/illustration.webp"

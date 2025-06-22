@@ -1,27 +1,33 @@
 import { signinProps } from '@/app/lib/definition'
 import React from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
 const NavLinks = ({className =''}: signinProps) => {
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path ? 'text-green-700 font-semibold underline underline-offset-2' : 'text-black-900 ';
+
+  
   return (
     <div>
         <ul className="flex flex-col md:flex-row md:space-x-10 space-y-6 md:space-y-0 text-gray-900">
             <li>
-            <a href="#about" className={`  ${className} `}>About Us</a>
+            <Link href="/about"   className={`${isActive('/about')} ${className}`}>About Us</Link>
             </li>
             <li>
-            <a href="#candidates" className={`  ${className}`}>For Candidates</a>
+            <Link href="/candidates" className={`${isActive('/candidates')} ${className}`}>For Candidates</Link>
             </li>
             <li>
-            <a href="#companies" className={` ${className}`}>For Companies</a>
+            <Link href="/companies" className={`${isActive('/companies')} ${className}`}>For Companies</Link>
             </li>
             <li>
-            <a href="#reviews" className={`  ${className}`}>Reviews</a>
+            <Link href="/rev" className={`${isActive('/rev')} ${className}`}>Reviews</Link>
             </li>
             <li>
-                <a href="#blogs" className={`  ${className}`}>Blogs</a>
+                <Link href="/blogs" className={`${isActive('/blogs')} ${className}`}>Blogs</Link>
             </li>
             <li>
-            <a href="#training" className={` ${className}`}>Training</a>
+            <Link href="/training" className={`${isActive('/training')} ${className}`}>Training</Link>
             </li>
         </ul>
       
