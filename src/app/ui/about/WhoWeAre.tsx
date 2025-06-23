@@ -87,14 +87,14 @@ const WhoWeAre = () => {
     <div className="py-20 mt-30 md:mt-20 bg-gray-50">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black-900 mb-6">Who We Are</h2>
+          <h2 className="text-4xl font-bold text-black mb-6">Who We Are</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-black-600 mb-8">
+            <p className="text-lg text-black mb-8">
               E-Africa Is More Than A Platform; It Is A Movement To Redefine Career Development For Africans.
               We Connect Job Seekers, Students, And Professionals With Industry Experts, Mentors, And Hiring
               Managers To Foster Personal And Professional Growth.
             </p>
-            <p className="text-lg text-black-600">
+            <p className="text-lg text-black">
               By Creating An Ecosystem Of Guidance, Collaboration, And Opportunity, E-Africa Is Empowering
               Individuals To Unlock Their Full Potential And Achieve Their Career Goals.
             </p>
@@ -119,9 +119,9 @@ const WhoWeAre = () => {
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-black-900">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-black">Our Vision</h3>
               </div>
-              <p className="text-black-600 text-lg leading-relaxed">
+              <p className="text-black text-lg leading-relaxed">
                 To Empower A Billion Talents And Improve The Livelihood Of
                 Generations To Come By Bridging The Gap Between African Talent
                 And Global Opportunities.
@@ -134,10 +134,10 @@ const WhoWeAre = () => {
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
                   <Award className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-black">Our Mission</h3>
               </div>
               <div className="space-y-4">
-                <p className="text-black-600">We Aim To:</p>
+                <p className="text-black">We Aim To:</p>
                 <ul className="space-y-3">
                   {[
                     "Connect Individuals With Expert Mentorship And Coaching.",
@@ -147,7 +147,7 @@ const WhoWeAre = () => {
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                      <span className="text-black-600">{item}</span>
+                      <span className="text-black">{item}</span>
                     </li>
                   ))}
                 </ul>

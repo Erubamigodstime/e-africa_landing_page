@@ -57,7 +57,7 @@ const DiscoverSection = () => {
 
         <div className="relative flex flex-col items-center gap-2  bg-white py-3 px-4 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]">
         <div className="mb-6 flex flex-col items-center justify-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-1">
+            <h3 className="text-2xl font-bold text-black mb-1">
             Career Development and Job Opportunities
             </h3>
             <p className="text-black text-center">
@@ -67,8 +67,8 @@ const DiscoverSection = () => {
 
         <div className="flex flex-col w-full items-center justify-center xs:flex-row  sm:flex-row md:flex-row sm:items-center md:items-center sm:justify-center md:justify-center sm:max-h-fit  md:max-h-fit  ">
             <div className="bg-white rounded-l-xl border-20 border-green-700 shadow-lg p-4  z-10">
-            <h4 className="text-lg font-semibold mb-1">Tools And Resources</h4>
-            <ul className="text-sm text-gray-900 list-disc list-inside space-y-1">
+            <h4 className="text-lg text-black  font-semibold mb-1">Tools And Resources</h4>
+            <ul className="text-sm text-black list-disc list-inside space-y-1">
                 <li>Access to jobs and internships.</li>
                 <li>Collaboration and community support.</li>
                 <li>Practical skill development programs.</li>              

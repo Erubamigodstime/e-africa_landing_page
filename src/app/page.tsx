@@ -16,7 +16,7 @@ export default function Home() {
     <div className='flex flex-col bg-white'>
     
     <HeroSection />
-    <h1 className='mt-5  mb-7 text-2xl self-center justify-self-center font-semibold  md:text-4xl '> HOW WE PATNER WITH YOU TO ACHIEVE YOUR GOAL</h1> 
+    <h1 className='text-black mt-5  mb-7 text-2xl self-center justify-self-center font-semibold  md:text-4xl '> HOW WE PATNER WITH YOU TO ACHIEVE YOUR GOAL</h1> 
     <Patners />
     <HeroIllustration />
     <ReasonSection/>
