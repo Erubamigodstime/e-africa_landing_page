@@ -15,7 +15,7 @@ export const teamMembers = [
     },
     {
       name: "Godstime Erubami", 
-      role: "Chief Technology Officer At E-Africa",
+      role: "Full Stack Developer At E-Africa",
       image: "/gt.webp"
     },
     {
