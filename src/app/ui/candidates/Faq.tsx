@@ -35,9 +35,9 @@ const Faq = () => {
                 <div key={index} className="border border-gray-200 rounded-lg">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left flex justify-between  items-center hover:bg-gray-50"
+                    className="w-full px-6 py-6 text-left flex justify-between  items-center hover:bg-gray-50"
                   >
-                     <p><span className="font-bold text-black">{`Q:${index+1}`}</span> <span className="font-medium text-black">{faq.question}</span> </p>
+                     <p><span className="font-extrabold text-black">{`Q:${index+1}`}</span> <span className="font-medium text-black">{faq.question}</span> </p>
                     {openFAQ === index ? (
                       <Minus className="w-5 h-5 text-gray-500" />
                     ) : (
@@ -45,8 +45,8 @@ const Faq = () => {
                     )}
                   </button>
                   {openFAQ === index && (
-                    <div className="px-6 pb-4">
-                      <p className="text-gray-700">{faq.answer}</p>
+                    <div className="px-6 py-7 pb-4">
+                      <p className="  text-gray-700">{faq.answer}</p>
                     </div>
                   )}
                 </div>
