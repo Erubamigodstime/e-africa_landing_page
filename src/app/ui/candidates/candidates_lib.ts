@@ -49,7 +49,7 @@ export const steps = [
     title: 'Sign Up And Create Your Profile',
     description: `Start by signing up and crafting a detailed profile that showcases your unique talents, skills, and career goals. Whether you're a job seeker, a student, or a professional, this step helps you stand out and connect with the right opportunities and people on the platform.`,
     image: '/step1.webp',
-    video: '/sign-up.mp4',
+    video: '/videos/new-sign-up.mp4',
     poster: '/poster4.webp',
   },
   {
@@ -57,7 +57,7 @@ export const steps = [
     title: 'Explore Opportunities',
     description: `Browse through tailored job listings and career programs curated just for you. E-Africa connects you with opportunities that match your strengths and aspirations.`,
     image: '/career1.webp',
-    video: '/jobs.mp4',
+    video: '/videos/new-jobs.mp4',
     poster: '/poster2.webp',
   },
   {
@@ -65,7 +65,7 @@ export const steps = [
     title: 'Connect & Grow',
     description: `Engage with mentors, peers, and employers. E-Africa provides tools for continuous growth, collaboration, and success.`,
     image: '/career2.webp',
-    video: '/hiring.mp4',
+    video: '/videos/new-hiring.mp4',
     poster: '/poster3.webp',
   },
 ];

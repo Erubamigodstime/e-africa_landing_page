@@ -16,7 +16,7 @@ const Faq = () => {
       };
   return (
     <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -35,9 +35,9 @@ const Faq = () => {
                 <div key={index} className="border border-gray-200 rounded-lg">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50"
+                    className="w-full px-6 py-4 text-left flex justify-between  items-center hover:bg-gray-50"
                   >
-                    <span className="font-medium text-gray-900">{faq.question}</span>
+                     <p><span className="font-bold text-black">{`Q:${index+1}`}</span> <span className="font-medium text-black">{faq.question}</span> </p>
                     {openFAQ === index ? (
                       <Minus className="w-5 h-5 text-gray-500" />
                     ) : (
