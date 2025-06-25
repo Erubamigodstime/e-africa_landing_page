@@ -70,3 +70,130 @@ import Image from 'next/image';
             </div>
         </div>
         </div>
+
+
+ {/* <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-xs text-white rounded-lg p-3">
+                  <h3 className="font-semibold text-lg mb-1">{category.title}</h3>
+                  <p className="text-sm opacity-90">{category.subtitle}</p>
+    </div> */}
+
+
+
+{/* <div className="relative md:h-full  items-center z-10 max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center lg:text-left">
+          Just 3 Simple Steps To Kickstart Your Journey!
+        </h2>
+
+        <div className="w-full flex flex-col md:flex-row justify-center gap-8 md:gap-2 px-4 md:px-0">
+          <div className="flex-1 flex">
+            <div className="flex items-start gap-6">
+              <div className="flex flex-col items-center mt-2 space-y-8">
+                {steps.map((step, index) => (
+                  <button
+                    key={index}
+                    className={`w-8 h-8 rounded-full border-2 flex items-center justify-center font-bold transition duration-300 ${
+                      activeStep === index
+                        ? 'bg-white text-green-800 border-white'
+                        : 'border-white text-white hover:bg-white hover:text-green-800'
+                    }`}
+                    onClick={() => setActiveStep(index)}
+                  >
+                    {step.number}
+                  </button>
+                ))}
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">
+                  {steps[activeStep].title}
+                </h3>
+                <p className="text-white/90 leading-relaxed max-w-xl">
+                  {steps[activeStep].description}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex-1 h-[25rem] flex items-stretch justify-center">
+            <div className="rounded-t-xl overflow-hidden shadow-lg w-full h-full max-w-md">
+              <Image
+                src={steps[activeStep].image}
+                alt={steps[activeStep].title}
+                width={600}
+                height={400}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+
+
+      // const StepGuide = () => {
+      //   const [activeStep, setActiveStep] = useState(0);
+      
+      //   return (
+      //     <section className="relative text-white py-20  ">
+      //       <div className="absolute inset-0 z-0">
+      //         <Image        
+      //           src="/step-hero.webp"
+      //           alt="background"
+      //           fill
+      //           className="object-cover"
+      //         />    
+      //       </div>
+      //       <div className="relative z-10 max-w-7xl mx-auto px-4 items-center sm:px-6 lg:px-8 flex flex-col  gap-10">
+      //         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center lg:text-left">
+      //               Just 3 Simple Steps To Kickstart Your Journey!
+      //         </h2>
+      //         <div className='w-full flex flex-col  md:flex-row md:h-[25rem]  justify-center gap-8 md:gap-6 px-4 md:px-0'>
+      //         <div className=" flex-1/2">
+      //          <div className="flex items-start gap-6">
+      //            <div className="flex flex-col items-center mt-2 space-y-8">
+      //              {steps.map((step, index) => (
+      //                <button
+      //                  key={index}
+      //                  className={`w-8 h-8 rounded-full border-2 flex items-center justify-center font-bold transition duration-300 ${
+      //                    activeStep === index
+      //                      ? 'bg-white text-green-800 border-white'
+      //                      : 'border-white text-white hover:bg-white hover:text-green-800'
+      //                  }`}
+      //                  onClick={() => setActiveStep(index)}
+      //                >
+      //                  {step.number}
+      //                </button>
+      //              ))}
+      //            </div>
+      
+      //            <div>
+      //              <h3 className="text-2xl font-semibold mb-4">
+      //                {steps[activeStep].title}
+      //              </h3>
+      //              <p className="text-white/90 leading-relaxed max-w-xl">
+      //                {steps[activeStep].description}
+      //              </p>
+      //            </div>
+      //          </div>
+      //        </div>
+      
+      //        <div className=" flex justify-center md:h-[25rem] border-4 border-amber-500">
+      //          <div className="rounded-xl overflow-hidden border-4 border-black shadow-lg max-w-md w-full h-full">
+      //            <Image
+      //              src={steps[activeStep].image}
+      //              alt={steps[activeStep].title}
+      //              width={600}
+      //              height={400}
+      //              className="object-cover w-full h-full"
+      //            />
+      //          </div>
+      //        </div>
+      
+      //         </div>
+             
+      //       </div>
+      //     </section>
+      //   );
+      // };
+      
+      // export default StepGuide;

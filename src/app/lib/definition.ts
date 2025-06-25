@@ -18,7 +18,8 @@ export type signinProps = {
 }
 export type patnerCardProps = {
     title: string;
-    description: string;
+    description?: string;
+    description2?: string;
     imageUrl: string;
     className?: string; 
 };
