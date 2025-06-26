@@ -43,32 +43,33 @@ export const careerCategories = [
   ];
 
 
-export const steps = [
-  {
-    number: 1,
-    title: 'Sign Up And Create Your Profile',
-    description: `Start by signing up and crafting a detailed profile that showcases your unique talents, skills, and career goals. Whether you're a job seeker, a student, or a professional, this step helps you stand out and connect with the right opportunities and people on the platform.`,
-    image: '/step1.webp',
-    video: '/videos/new-sign-up.mp4',
-    poster: '/poster4.webp',
-  },
-  {
-    number: 2,
-    title: 'Explore Opportunities',
-    description: `Browse through tailored job listings and career programs curated just for you. E-Africa connects you with opportunities that match your strengths and aspirations.`,
-    image: '/career1.webp',
-    video: '/videos/new-jobs.mp4',
-    poster: '/poster2.webp',
-  },
-  {
-    number: 3,
-    title: 'Connect & Grow',
-    description: `Engage with mentors, peers, and employers. E-Africa provides tools for continuous growth, collaboration, and success.`,
-    image: '/career2.webp',
-    video: '/videos/new-hiring.mp4',
-    poster: '/poster3.webp',
-  },
-];
+  export const steps = [
+    {
+      number: 1,
+      title: 'Sign Up And Create Your Profile',
+      description: `Start by signing up and crafting a detailed profile that showcases your unique talents, skills, and career goals. Whether you're a job seeker, a student, or a professional, this step helps you stand out and connect with the right opportunities and people on the platform.`,
+      image: '/step1.webp',
+      video: 'https://pub-382a098557104188937f9a13feb46d99.r2.dev/new-sign-up.mp4',
+      poster: '/poster4.webp',
+    },
+    {
+      number: 2,
+      title: 'Explore Opportunities',
+      description: `Browse through tailored job listings and career programs curated just for you. E-Africa connects you with opportunities that match your strengths and aspirations.`,
+      image: '/career1.webp',
+      video: 'https://pub-382a098557104188937f9a13feb46d99.r2.dev/new-jobs.mp4',
+      poster: '/poster2.webp',
+    },
+    {
+      number: 3,
+      title: 'Connect & Grow',
+      description: `Engage with mentors, peers, and employers. E-Africa provides tools for continuous growth, collaboration, and success.`,
+      image: '/career2.webp',
+      video: 'https://pub-382a098557104188937f9a13feb46d99.r2.dev/new-hiring.mp4',
+      poster: '/poster3.webp',
+    },
+  ];
+  
 
 export const testimonials = [
   {
