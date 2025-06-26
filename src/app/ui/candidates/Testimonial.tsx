@@ -15,27 +15,27 @@ const Testimonial = () => {
           E-Africa Is More Than Just A Platform — Its Your Launchpad To Diverse Income Streams. Whether You are Building A Career Or Starting Freelance, Their Opportunities Are Limitless, Their Mentorship Sessions, Publish Courses, Or Connect With Industry Professionals To Explore Your Full Potential.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center items-center mt-8 mb-7 md:mb-17 gap-x-4 gap-y-4">
-        <button className="border border-gray-300 font-bold text-black px-6 py-2 rounded-md hover:bg-green-700">
+      <div className="flex flex-wrap justify-center items-center mt-8 mb-7 gap-x-7 md:mb-17  gap-y-4">
+        <button className=" p-5 hover:bg-black hover:text-white font-bold text-black  rounded-4xl">
           Virtual Assistant
         </button>
-        <button className="border border-gray-300 font-bold text-black px-6 py-2 rounded-md hover:bg-green-700">
+        <button className="p-5 hover:bg-black hover:text-white font-bold text-black  rounded-4xl">
           Content Writer
         </button>
-        <button className="border border-gray-300 font-bold text-black px-6 py-2 rounded-md hover:bg-green-700">
+        <button className="p-5 hover:bg-black hover:text-white font-bold text-black  rounded-4xl">
           Software Developer
         </button>
-        <button className="border border-gray-300 font-bold text-black px-6 py-2 rounded-md hover:bg-green-700">
+        <button className="p-5 hover:bg-black hover:text-white font-bold text-black  rounded-4xl">
           Copy Writer
         </button>
-        <button className="border border-gray-300 font-bold text-black px-6 py-2 rounded-md hover:bg-green-700">
+        <button className="p-5 hover:bg-black hover:text-white font-bold text-black  rounded-4xl">
           Hiring Manager
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 text-white gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+          <div key={index} className="bg-black p-6 rounded-lg shadow-md">
             <div className="flex items-center space-x-4 mb-4">
               <Image
                 width={50}
@@ -45,11 +45,11 @@ const Testimonial = () => {
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
-                <h4 className="font-semibold text-black">{testimonial.name}</h4>
-                <p className="text-sm text-gray-500">{testimonial.company}</p>
+                <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                <p className="text-sm text-white">{testimonial.company}</p>
               </div>
             </div>
-            <p className="text-gray-700 text-sm leading-relaxed">{testimonial.text}</p>
+            <p className="text-white text-sm leading-relaxed">{testimonial.text}</p>
           </div>
         ))}
       </div>
