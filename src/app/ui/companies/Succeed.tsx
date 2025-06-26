@@ -6,7 +6,7 @@ const Succeed = () => {
   return (
     <div className='flex flex-col items-center justify-center py-12 px-4 max-w-7xl mx-auto'>
       <div className="text-center mb-8 w-full">
-        <h2 className="text-2xl font-bold md:text-3xl mb-4">Succeed with E-Africa</h2>
+        <h2 className="text-2xl text-black font-bold md:text-3xl mb-4">Succeed with E-Africa</h2>
         <p className="text-black mb-8">Unlock your organizations potential by leveraging our platforms unique offerings.</p>
       </div>
       <div className="flex flex-col w-full gap-6 p-6 bg-white-50 max-w-[100rem] mx-auto">

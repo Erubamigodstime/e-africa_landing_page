@@ -16,7 +16,7 @@ import {
     return (
       <section className=" mt-13  text-center">
         <div  className="py-12   px-4 max-w-7xl mt-13 mx-auto text-center" >
-        <h2 className="text-3xl font-bold mb-2">Why Choose E-Africa?</h2>
+        <h2 className="text-3xl text-black font-bold mb-2">Why Choose E-Africa?</h2>
         <p className="text-black mb-10 max-w-2xl mx-auto">
           Transform your hiring process with access to top talent and tools that
           make finding the right candidates easier than ever.
@@ -25,15 +25,15 @@ import {
         <div className="grid grid-cols-1 font-[poppins] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Card key={index} className="bg-white h-full">
-              <CardHeader className="items-center">
+              <CardHeader className="text-black items-center">
                 {/* <div className="w-15 h-15 font-[poppins] rounded-full bg-gray-300 mb-4" /> */}
-                <div className="w-15 h-15 mb-4 rounded-full bg-gradient-to-br from-green-400 via-green-500 to-emerald-600 shadow-md" />
-                <CardTitle className="text-center font-[poppins] text-lg">
+                <div className="w-15 h-15 mb-4 text-black rounded-full bg-gradient-to-br from-green-400 via-green-500 to-emerald-600 shadow-md" />
+                <CardTitle className="text-center text-black font-[poppins] text-lg">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="font-[poppins] text-center">
+                <CardDescription className="font-[poppins] text-black text-center">
                   {feature.description}
                 </CardDescription>
               </CardContent>
