@@ -123,10 +123,10 @@ const Review = () => {
   const columns = [column1, column2, column3, column4];
 
   return (
-    <section className="py-14 px-4 max-w-7xl mx-auto bg-white text-center">
-      {/* Header */}
+    <section className=" w-full bg-white">
+      <div className=" py-14 px-4 max-w-7xl mx-auto bg-white text-center">
       <div className="flex flex-col xs:flex-row justify-between items-start px-4">
-        <h2 className="text-3xl text-left font-bold mb-4">
+        <h2 className="text-3xl text-left text-black font-bold mb-4">
           EMPOWER. CONNECT. <br /> THRIVE.
         </h2>
         <div className="flex flex-col items-start mb-6">
@@ -139,7 +139,7 @@ const Review = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="p-3 rounded-l border w-64"
+              className="p-3 rounded-l border text-black border-black w-64"
             />
             <button className="p-3 bg-green-700 text-white rounded-r">
               Subscribe
@@ -148,7 +148,6 @@ const Review = () => {
         </div>
       </div>
 
-      {/* Testimonial Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-20 items-start">
         {columns.map((column, i) => (
           <div
@@ -156,16 +155,16 @@ const Review = () => {
             className={`flex flex-col ${
               i === 0 || i === 2 ? "self-center" : "self-start"
             }`}
-          >
+          >          
             {column.map((item, j) =>
               item.type === "text" ? (
                 <div
                   key={`text-${i}-${j}`}
-                  className="bg-green-100 p-4 rounded-lg shadow text-left"
+                  className="bg-green-100  p-4 rounded-lg shadow text-left"
                 >
-                  <p className="mb-4 text-sm">{item.text}</p>
+                  <p className="mb-4 text-black text-sm">{item.text}</p>
                   <div className="text-left">
-                    <p className="font-semibold text-sm">{item.name}</p>
+                    <p className="font-semibold text-black text-sm">{item.name}</p>
                     <p className="text-xs text-black">{item.role}</p>
                   </div>
                 </div>
@@ -185,6 +184,7 @@ const Review = () => {
           </div>
         ))}
       </div>
+      </div>      
     </section>
   );
 };
