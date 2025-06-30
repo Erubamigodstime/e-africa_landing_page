@@ -3,13 +3,9 @@ import { blogPosts } from "@/app/ui/blogs/blogs_lib";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
 
-export default function BlogDetailPage({ params }: Props) {
+
+export default function BlogDetailPage({ params }: { params: { slug: string } }) {
   const blog = blogPosts.find((b) => b.slug === params.slug);
 
   if (!blog) return notFound();
