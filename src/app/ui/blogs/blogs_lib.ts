@@ -188,11 +188,7 @@ export const community_blogs = [
 ];
 
   
-export interface Props {
-  params: {
-    slug: string;
-  };
-}
+
 
 export const author =[
   {

@@ -1,10 +1,13 @@
+import React from "react";
 import { blogPosts } from "@/app/ui/blogs/blogs_lib"; 
 import { notFound } from "next/navigation";
-import Image from 'next/image'
-import { Props } from "@/app/ui/blogs/blogs_lib";
+import Image from "next/image";
 
-
-
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
 export default function BlogDetailPage({ params }: Props) {
   const blog = blogPosts.find((b) => b.slug === params.slug);
@@ -18,15 +21,19 @@ export default function BlogDetailPage({ params }: Props) {
         {blog.category} - {blog.date}
       </p>
       <Image
-        width={400}
-        height={300}
+        width={800}
+        height={400}
         src={blog.img}
         alt={blog.title}
         className="w-full rounded mb-6"
       />
-      <p className="text-lg leading-relaxed text-black">
-        {blog.excerpt}
-      </p>
+      <p className="text-lg leading-relaxed text-black">{blog.excerpt}</p>
     </main>
   );
+}
+
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
 }

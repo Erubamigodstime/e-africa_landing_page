@@ -12,7 +12,7 @@ const PatnerCardOne = ({title, description, imageUrl, className, children} :patn
             {children && <div className="mt-4 w-full">{children}</div>}
         </div>
 
-        <div className='w-full border-8 md:min-w[700px] md:w-1/2 px-5 md:px-17 flex justify-center items-center transition-all duration-300 hover:scale-110'>
+        <div className='w-full  md:min-w[700px] md:w-1/2 px-5 md:px-17 flex justify-center items-center transition-all duration-300 hover:scale-110'>
             <Image src={imageUrl} alt={title} width={500} height={300} className={`${className}`} />
         </div>
       
