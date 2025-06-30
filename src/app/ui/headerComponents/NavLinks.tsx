@@ -24,7 +24,7 @@ const NavLinks = ({className =''}: signinProps) => {
             <Link href="/rev" className={`${isActive('/rev')} ${className}`}>Reviews</Link>
             </li>
             <li>
-                <Link href="/blogs" className={`${isActive('/blogs')} ${className}`}>Blogs</Link>
+                <Link href="/blogs" className={`${isActive('/blog')} ${className}`}>Blogs</Link>
             </li>
             <li>
             <Link href="/training" className={`${isActive('/training')} ${className}`}>Training</Link>

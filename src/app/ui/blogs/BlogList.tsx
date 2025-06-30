@@ -19,7 +19,7 @@ import Link from "next/link";
         {blogPosts.map((post, index) => (
           <Link
             key={post.slug}
-            href={`/blogs/${post.slug}`}
+            href={`/blog/${post.slug}`}
             className="block mb-6" 
           >
             {index % 2 === 0 ? (
