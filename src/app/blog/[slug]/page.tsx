@@ -1,11 +1,12 @@
+import React from 'react';
 import { blogPosts } from "@/app/ui/blogs/blogs_lib";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
-  const { slug } = await params; 
-  const blog = blogPosts.find((b) => b.slug === slug);
+export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
+  const blog = blogPosts.find((b) => b.slug === slug);
   if (!blog) return notFound();
 
   return (
@@ -25,6 +26,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
     </main>
   );
 }
+
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
