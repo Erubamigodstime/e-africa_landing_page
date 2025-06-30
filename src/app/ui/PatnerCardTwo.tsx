@@ -2,10 +2,10 @@ import React from 'react'
 import { patnerCardProps } from '../lib/definition'
 import Image from 'next/image'
 
-const PatnerCardTwo = ({title, description, imageUrl, className} :patnerCardProps) => {
+const PatnerCardTwo = ({title, description, imageUrl, className, children} :patnerCardProps) => {
   return (
-    <div className=' flex w-full flex-col md:flex-row  md:gap-4 items-center justify-between  p-6 bg-white shadow-lg rounded-lg space-y-4  '>
-         <div className='w-full md:min-w[700px] md:w-1/2 md:px-17  flex justify-center items-center  transition-all duration-300
+    <div className=' flex w-full  flex-col md:flex-row  md:gap-4 items-center justify-between  p-6 bg-white shadow-lg rounded-lg space-y-4  '>
+         <div className='w-full h-full border-8 md:min-w[700px] md:w-1/2 md:px-17 px-5 flex justify-center items-center  transition-all duration-300
               hover:scale-110'>
             <Image src={imageUrl} alt={title} width={500} height={300} className={`${className}`} />
         </div>       
@@ -15,6 +15,7 @@ const PatnerCardTwo = ({title, description, imageUrl, className} :patnerCardProp
             <p className="text-black mb-6 text-sm md:text-[1rem] leading-[38px]">
               {description}
           </p>
+            {children && <div className="mt-4 w-full">{children}</div>}
       </div>      
     </div>
   )

@@ -21,9 +21,8 @@ const HeroSect = ({imageUrl, title, description, description2, className }: patn
                 {title}
                 <br />
                 <span className={`${className}`}>{description}</span>
-
                 <br />
-               {description2}
+                <span className={`${className}`}>{description2}</span>
               </h1>
             </div>
           </div>

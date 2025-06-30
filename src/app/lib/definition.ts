@@ -22,6 +22,7 @@ export type patnerCardProps = {
     description2?: string;
     imageUrl: string;
     className?: string; 
+    children?: React.ReactNode;
 };
 export type ImageProps = {
     src: string;

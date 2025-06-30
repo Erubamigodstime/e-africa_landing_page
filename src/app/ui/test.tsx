@@ -65,3 +65,23 @@
 //   };
   
 //   export default Review;
+
+// <div key={index} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//   <Image 
+//     width={400}
+//     height={300}
+//     src={post.img} 
+//     alt={post.title} 
+//     className="w-full h-full object-cover rounded" />
+//   <div>
+//   <p className='font-[poppins] text-center mb-7'> <span className="font-[poppins] text-xs text-red-900 font-bold mb-2"> {post.category} - </span> <span className="text-xs text-black font-bold mb-2" > {post.date}</span></p>
+//     <h3 className="font-semibold text-md md:text-3xl mb-4 md:mb-4">{post.title}</h3>
+//     <p className="text-sm text-black mb-2">{post.excerpt}</p>
+//     <Button 
+//       size="lg" 
+//       className="bg-green-400 hover:bg-green-600 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+//       Read more              
+//      <ArrowRight className="ml-2" size={20} />
+//   </Button>
+//   </div>
+// </div>

@@ -1,13 +1,10 @@
 import React from 'react';
 import "./globals.css";
-import { Poppins } from 'next/font/google'
 import Header from './ui/Header';
 import Footer from './ui/Footer';
+import { poppins } from './ui/fonts';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-})
+
 
 export const metadata = {
   generator: 'Next.js',
