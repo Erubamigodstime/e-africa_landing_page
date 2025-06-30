@@ -1,49 +1,5 @@
-// // testimonialsData.ts
-// export const testimonials = [
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev1.webp",
-//     },
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev2.webp",
-//     },
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev3.webp",
-//     },
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev1.webp",
-//     },
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev2.webp",
-//     },
-//     {
-//       name: "TY Jones",
-//       role: "Product Designer",
-//       text:
-//         "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-//       image: "/rev3.webp",
-//     },
-//   ];
-  
+
+
 export type TestimonialItem =
   | {
       type: "text";
@@ -65,6 +21,16 @@ export const testimonials: TestimonialItem[] = [
   },
   {
     type: "image",
+    image: "/rev2.webp",
+  },
+  {
+    type: "text",
+    text: "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
+    name: "TY Jones",
+    role: "Product Designer",
+  },
+  {
+    type: "image",
     image: "/rev1.webp",
   },
   {
@@ -76,15 +42,5 @@ export const testimonials: TestimonialItem[] = [
   {
     type: "image",
     image: "/rev2.webp",
-  },
-  {
-    type: "text",
-    text: "E-Africa Has Completely Revolutionized How I Approach Career Growth. The Mentorship Opportunities Are Invaluable, And The Accountability Partner System Keeps Me On Track With My Goals. It’s A Must–",
-    name: "TY Jones",
-    role: "Product Designer",
-  },
-  {
-    type: "image",
-    image: "/rev3.webp",
   },
 ];

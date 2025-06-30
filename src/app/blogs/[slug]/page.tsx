@@ -28,8 +28,10 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
   );
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
 }
+
+export const dynamicParams = true;
