@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Button } from '@/app/ui/Button';
 import { ArrowRight,  ArrowUpRight } from 'lucide-react';
 import { blogPosts, author } from "./blogs_lib";
-import PatnerCardOne from  '../PatnerCardOne'; 
-import PatnerCardTwo from '../PatnerCardTwo';
+import BlogCardOne from  './BlogCardOne'; 
+import BlogCardTwo from './BlogCardTwo';
 import Link from "next/link";
 
 
@@ -12,22 +12,22 @@ import Link from "next/link";
   
   export default function BlogList() {
     return (
-      <section className="max-w-[90%] border-t-1 border-t-gray-400 mx-auto px-4 ">        
+      <section className="max-w-[90%] border-t-1 border-t-gray-400 mx-auto sm:px-4 ">        
         <div className='w-full h-full flex flex-row justify-between md:gap-4'>
-        <div className=" h-full flex-1/2">
+        <div className=" h-full min-w-full sm:min-w-1/2 md:w-full sm:flex-1/2">
         <h2 className='text-green-700 font-extrabold text-lg md:text-4xl text-center mt-4 mb-7'> LATEST BLOG POST </h2>
-        {blogPosts.map((post, index) => (
+        {blogPosts.slice(0, 3).map((post, index) => (
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
             className="block mb-6" 
           >
             {index % 2 === 0 ? (
-              <PatnerCardOne
+              <BlogCardOne
                 title={post.title}
                 description={post.excerpt}
                 imageUrl={post.img}
-                className="w-full  h-auto"
+                className='object-cover rounded-lg self-start '
               >
                 <Button
                   size="lg"
@@ -36,13 +36,13 @@ import Link from "next/link";
                   Read more
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-              </PatnerCardOne>
+              </BlogCardOne>
             ) : (
-              <PatnerCardTwo
+              <BlogCardTwo
                 title={post.title}
                 description={post.excerpt}
-                imageUrl={post.img}
-                className="w-full h-auto"
+                imageUrl={post.img}                
+                className='object-cover rounded-lg self-start'
               >
                 <Button
                   size="lg"
@@ -51,14 +51,14 @@ import Link from "next/link";
                   Read more
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-              </PatnerCardTwo>
+              </BlogCardTwo>
             )}
           </Link>
         ))}
       </div>
         
   
-        <aside className="space-y-10 px-3 border-l-1 border-l-gray-400">
+        <aside className="space-y-10 px-3 sm:border-l-1 sm:border-l-gray-400">
           <div className='w-full h-full hidden sm:flex flex-col md:mt-29 gap-7 items-center'>
           <div className=' border-b-1 border-b-gray-400 py-7'>
             <h4 className="font-semibold text-md mb-2">Learning Resources</h4>

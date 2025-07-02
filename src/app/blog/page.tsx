@@ -13,7 +13,7 @@ const page = () => {
         title="Blogs:"
         description="Insights & Inspiration:"
         description2=" A Hub for Career Growth, Expert Advice, and Valuable Resources to Empower Your Professional Journey"
-        className='text-green-700 text-4xl md:text-5xl'
+        className='text-green-700 text-3xl md:text-5xl'
       />
       <BlogHighlight />
       <BlogList />

@@ -12,7 +12,7 @@ const BlogHighlight = () => {
       className="w-full h-full object-cover rounded"
     />
     <div className="flex p-6 flex-col justify-between gap-6 shadow-lg rounded bg-gray-100">
-      <div className='px-8'>
+      <div className='sm:px-8'>
         <p className='font-[poppins] text-center mb-7'> <span className="font-[poppins] text-xs text-red-900 font-bold mb-2"> NEWS & UPDATES  </span> <span className="text-xs text-black font-bold mb-2" > - October 31, 2024</span></p>
         <h3 className="font-[poppins] text-xl md:text-3xl md:leading-12 mb-4 md:mb-12">
           5 Key Strategies for Landing Your Dream Job in Africa’s Competitive Market | October 2024
