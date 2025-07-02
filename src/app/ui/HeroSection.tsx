@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h1 className="animate-banner text-black text-2xl sm:text-4xl md:text-5xl font-bold mb-4">
             SEARCHING FOR THAT <span className="text-green-700">DREAM JOB</span>
           </h1>
-          <h2 className="animate-banner-delay text-xl sm:text-3xl md:text-4xl font-bold">
+          <h2 className="text-black animate-banner-delay text-xl sm:text-3xl md:text-4xl font-bold">
             SEEKING <span className="text-green-700">EXPERT ADVICE</span> IN ANY FIELD
           </h2>
         </div>
